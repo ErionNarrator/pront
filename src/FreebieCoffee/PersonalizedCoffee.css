@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.PersonalizedCoffee{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    height: 25rem;
+    color: #415167;
+
+}
+
+.PersonalizedCoffeeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.PersonalizedCoffeeText p{
+    font-size: 1.5rem;
+}
+.PersonalizedCoffeeBlok{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+}
+.PersonalizedCoffeeBlokM{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}

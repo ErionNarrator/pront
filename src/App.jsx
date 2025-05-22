@@ -51,68 +51,70 @@ function App() {
     }
   };
 
+
   return (
-    <>
-      <div>
+      <>
++        <div>
 
-        <div className="regist">
-          <button type="button" onClick={openPopUp}>
-            <p>Login</p>
-          </button>
-          <button type="button" onClick={openPopUpreg}>
-            <p>Register</p>
-          </button>
+          <div >
+            <button type="button" onClick={openPopUp}>
+              <p>Login</p>
+            </button>
+            <button type="button" onClick={openPopUpreg}>
+              <p>Register</p>
+            </button>
 
+          </div>
+
+          {isOpenit && (
+              <div id="popap">
+                <div>
+                  <button type="button" onClick={closePopUp}>
+                    =
+                  </button>
+                </div>
+                <form  onSubmit={handLelog}>
+                  <div>
+                    <div>
+                      <input type="text" name="name" placeholder="Имя" value={name}
+                             onChange={(e) => setName(e.target.value)} required/>
+                    </div>
+                    <div>
+                      <input type="text" name="password" placeholder="password" value={password}
+                             onChange={(e) => setPassword(e.target.value)} required/>
+                    </div>
+                  </div>
+                  <input type="submit" value="Submit"/>
+                </form>
+              </div>
+          )}
+          {isOpen && (
+              <div  id="popap">
+                <div>
+                  <button type="button" onClick={closePopUpreg}>
+                    +
+                  </button>
+                </div>
+                <form  onSubmit={handleReg}>
+                  <div>
+                    <div>
+                      <input type="text" name="name" placeholder="Имя" value={name}
+                             onChange={(e) => setName(e.target.value)} required/>
+                      <input type="text" name="email" placeholder="email" value={email}
+                             onChange={(e) => setEmail(e.target.value)} required/>
+                    </div>
+                    <div>
+                      <input type="text" name="password" placeholder="password" value={password}
+                             onChange={(e) => setPassword(e.target.value)} required/>
+                    </div>
+                  </div>
+                  <input type="submit" value="Submit"/>
+                </form>
+              </div>
+          )}
         </div>
 
-        {isOpenit && (
-            <div className="popap" id="popap">
-              <div className="krest">
-                <button type="button" onClick={closePopUp}>
-                  =
-                </button>
-              </div>
-              <form className="popap_div" onSubmit={handLelog}>
-                <div>
-                  <div>
-                    <input type="text" name="name" placeholder="Имя" value={name}
-                           onChange={(e) => setName(e.target.value)} required/>
-                  </div>
-                  <div>
-                    <input type="text" name="password" placeholder="password" value={password}
-                           onChange={(e) => setPassword(e.target.value)} required/>
-                  </div>
-                </div>
-                <input type="submit" value="Submit"/>
-              </form>
-            </div>
-        )}
-        {isOpen && (
-            <div className="popap" id="popap">
-              <div className="krest">
-                <button type="button" onClick={closePopUpreg}>
-                  +
-                </button>
-              </div>
-              <form className="popap_div" onSubmit={handleReg}>
-                <div>
-                  <div>
-                    <input type="text" name="name" placeholder="Имя" value={name}
-                           onChange={(e) => setName(e.target.value)} required/>
-                    <input type="text" name="email" placeholder="email" value={email}
-                           onChange={(e) => setEmail(e.target.value)} required/>
-                  </div>
-                  <div>
-                    <input type="text" name="password" placeholder="password" value={password}
-                           onChange={(e) => setPassword(e.target.value)} required/>
-                  </div>
-                </div>
-                <input type="submit" value="Submit"/>
-              </form>
-            </div>
-        )}
-      </div>
-    </>
+      </>
   )
 }
 

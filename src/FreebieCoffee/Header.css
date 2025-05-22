@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.Header{
+    height:48rem;
+    width:100%;
+    display:flex;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.HeaderNav{
+    background-color: #415167;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.HeaderRev{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20rem;
+    color: #415167;
+
+}
+
+.HeaderNav a{
+    color: white;
+
+}
