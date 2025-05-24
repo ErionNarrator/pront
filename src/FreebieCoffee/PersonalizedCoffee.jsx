@@ -31,6 +31,7 @@ function PersonalizedCoffee() {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
