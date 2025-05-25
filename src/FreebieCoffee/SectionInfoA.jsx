@@ -10,8 +10,7 @@ function SectionInfoA() {
     const [editingId, setEditingId] = useState(null);
     const [error, setError] = useState('');
 
-    const API_URL = 'http://localhost:5000/infoA'; // Убедитесь, что URL соответствует вашему серверу
-
+    const API_URL = 'http://localhost:5000/infoA';
     const fetchData = async () => {
         try {
             const response = await axios.get(API_URL);
