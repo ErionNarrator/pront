@@ -110,7 +110,7 @@ function SectionInfoA() {
                             </thead>
                             <tbody>
                             {data.map(item => (
-                                <tr key={item.id} style={{borderBottom: '1px solid #ddd'}}>
+                                <tr key={item.id}>
                                     <td>{item.id}</td>
                                     <td>{item.name}</td>
                                     <td>{item.description}</td>
